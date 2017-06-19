@@ -1,0 +1,124 @@
+body {
+    background-color: rgba(128, 128, 128, 0.1);
+    background-image: url("../images/kenya.jpg");
+    background-repeat: repeat-x;
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container>.cover,
+.drum {
+    display: block;
+}
+
+#record {
+    width: 100px;
+    height: 100px;
+    /*border: 1px solid #fff;*/
+    border-radius: 100%;
+    background: red;
+    color: white;
+    font-weight: 100%;
+    font-size: 1em;
+    text-align: center;
+    box-sizing: content-box;
+    padding: 5px;
+}
+
+.cover {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    /*padding: 50px*/
+}
+
+.cover h2 {
+    color: white;
+    z-index: 999;
+}
+
+.key {
+    /*transform: rotate(-90deg);*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 312px;
+    /*height: auto;*/
+    overflow: hidden;
+    /*background: white;*/
+    /*border: 1px solid light;*/
+    /*margin: 10px;*/
+}
+
+#drum {
+    background-color: rgba(7, 9, 68, 0.84);
+    transform: rotate(-90deg);
+    margin: 0 auto;
+    width: 400px;
+    z-index: -1;
+}
+
+audio {
+    /*height: 50px*/
+}
+
+audio::-webkit-media-controls-panel {
+    /*display: none;*/
+    overflow: hidden;
+    height: 40px;
+}
+
+audio::-webkit-media-controls-mute-button {
+    display: none;
+}
+
+audio::-webkit-media-controls-play-button {
+    /*background-color: green;*/
+}
+
+audio::-webkit-media-controls-timeline-container {
+    display: none;
+}
+
+audio::-webkit-media-controls-current-time-display {
+    display: none;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+    display: none;
+}
+
+audio::-webkit-media-controls-timeline {
+    /*display: none;*/
+}
+
+audio::-webkit-media-controls-volume-slider-container {}
+
+audio::-webkit-media-controls-volume-slider {}
+
+audio::-webkit-media-controls-seek-back-button {}
+
+audio::-webkit-media-controls-seek-forward-button {}
+
+audio::-webkit-media-controls-fullscreen-button {}
+
+audio::-webkit-media-controls-rewind-button {}
+
+audio::-webkit-media-controls-return-to-realtime-button {}
+
+audio::-webkit-media-controls-toggle-closed-captions-button {}
+
+
+/*audio::-internal-media-controls-download-button {
+    display: none;
+}
+
+audio::-webkit-media-controls-enclosure {
+    overflow: hidden;
+}
+
+audio::-webkit-media-controls-panel {
+    width: calc(100% + 30px);
+    /* Adjust as needed */

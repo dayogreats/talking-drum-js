@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+
+<head>
+    <meta name="" content="">
+    <link rel="stylesheet" type="" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <!--COVER-->
+        <div class="cover">
+            <h2> LOADING...</h2>
+            <i class="fa fa-spiner " aria-hidden="true"></i>
+            <i class="fa fa-spiner fa-spin fa-lg"></i>
+            <i class="fa fa-spiner fa-spin fa-2x"></i>
+            <i class="fa fa-spiner fa-spin fa-3x"></i>
+            <i class="fa fa-spiner fa-spin fa-4x"></i>
+            <i class="fa fa-spiner fa-spin fa-5x"></i>
+        </div>
+
+        <!--AUDIO-->
+        <div id="drum">
+            <% for (var i=0; i < files.length; i++) { %>
+                <% for (var i=0; i < keys.length; i++) { %>
+                    <div class="key">
+                        <audio data-key="<%= keys[i] %>" controls controlsList="nodownload">
+                    <source src="<%= files[i] %>" type="audio/wav">
+                    <p>Your browser does not suport audio.</p>
+                </audio>
+                    </div>
+                    <% } %>
+                        <% } %>
+
+        </div>
+        <div id="record">RECORD</div>
+
+    </div>
+    <script src="ejs_events.js"></script>
+</body>
+
+</html>
